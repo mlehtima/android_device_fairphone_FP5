@@ -68,17 +68,29 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
 
-    chown system system /sys/class/leds/vibrator_1/trigger
-    chown system system /sys/class/leds/vibrator_1/activate
-    chown system system /sys/class/leds/vibrator_1/brightness
-    chown system system /sys/class/leds/vibrator_1/duration
-    chown system system /sys/class/leds/vibrator_1/state
-    chown system system /sys/class/leds/vibrator_1/loop
-    chown system system /sys/class/leds/vibrator_1/seq
-    chown system system /sys/class/leds/vibrator_1/index
-    chown system system /sys/class/leds/vibrator_1/enable
-    chown system system /sys/class/leds/vibrator_1/rtp
-    chown system system /sys/class/leds/vibrator_1/activate_mode
+    chown system input /sys/class/leds/vibrator_1/trigger
+    chown system input /sys/class/leds/vibrator_1/activate
+    chown system input /sys/class/leds/vibrator_1/brightness
+    chown system input /sys/class/leds/vibrator_1/duration
+    chown system input /sys/class/leds/vibrator_1/state
+    chown system input /sys/class/leds/vibrator_1/loop
+    chown system input /sys/class/leds/vibrator_1/seq
+    chown system input /sys/class/leds/vibrator_1/index
+    chown system input /sys/class/leds/vibrator_1/enable
+    chown system input /sys/class/leds/vibrator_1/rtp
+    chown system input /sys/class/leds/vibrator_1/activate_mode
+
+    chmod 0664 /sys/class/leds/vibrator_1/trigger
+    chmod 0664 /sys/class/leds/vibrator_1/activate
+    chmod 0664 /sys/class/leds/vibrator_1/brightness
+    chmod 0664 /sys/class/leds/vibrator_1/duration
+    chmod 0664 /sys/class/leds/vibrator_1/state
+    chmod 0664 /sys/class/leds/vibrator_1/loop
+    chmod 0664 /sys/class/leds/vibrator_1/seq
+    chmod 0664 /sys/class/leds/vibrator_1/index
+    chmod 0664 /sys/class/leds/vibrator_1/enable
+    chmod 0664 /sys/class/leds/vibrator_1/rtp
+    chmod 0664 /sys/class/leds/vibrator_1/activate_mode
 
 	# add sensor sysfs node
     chmod 0666 /sys/emkit/info/proximity
